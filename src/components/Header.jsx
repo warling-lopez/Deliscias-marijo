@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <header className="bg-cream-50 py-4 px-6 md:px-12 shadow-md sticky top-0 z-50">
+    <header className="bg-[#6ad3d8] flex items-center h-17 px-6 md:px-12 shadow-md sticky top-0 z-50 rounded-b-3xl">
       <div className="container mx-auto flex justify-between items-center">
         <div className="hidden md:flex items-center space-x-6 text-sm font-semibold tracking-wider text-zinc-600">
           <a href="#" className="hover:text-pink-500 transition-colors">
@@ -15,13 +15,8 @@ function Header() {
             PASTELES
           </a>
         </div>
-        <div className="text-center">
-          <h1 className="text-3xl font-serif text-pink-500 tracking-tight">
-            Pâtisserie
-          </h1>
-          <p className="text-xs text-zinc-500 tracking-widest">
-            CHIC & STYLISH
-          </p>
+        <div className="relative flex justify-center items-center w-25 h-25 top-5  shadow-xl rounded-full">
+            <img src="/logoPasteles.jpeg" className=" relative rounded-full w-20 " alt="Logo" />
         </div>
         <div className="hidden md:flex items-center space-x-6 text-sm font-semibold tracking-wider text-zinc-600">
           <a href="#" className="hover:text-pink-500 transition-colors">
