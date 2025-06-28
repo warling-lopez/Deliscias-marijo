@@ -189,7 +189,7 @@ export default function App() {
         <section className="py-24 px-6 bg-rose-50/50">
           <div className="container mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-12">
-              <div className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="md:grid grid-cols-1 flex-wrap flex justify-center lg:grid-cols-4 gap-8">
                 {macarons.map((macaron, index) => (
                   <ProductCard key={index} name={macaron.nombre} caracteristicas={macaron.caracteristicas} precio={macaron.precio} url={macaron.url} />
                 ))}
