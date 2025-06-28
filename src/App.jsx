@@ -77,57 +77,57 @@ const FacebookIcon = () => (
 export default function App() {
   const caracteristicas=["Bajas en azúcar", "Pedidos a partir de una docena", "Caja de entrega", "Envoltura","Sticker de temporada"]
   const customCakes = [{
-    nombre:"Galletas de Chocolate Chips",
+    nombre:"Cupcakes decorados rellenos de dulce de leche",
     caracteristicas,
-    precio:"800 Dop",
-    url:"/cockies.jpeg"
+    precio:"2,200 Dop",
+    url:"/mofingsoccer.png"
   },{
     nombre:"Galletas de Vainilla y Chocolate edicion Navidad",
     caracteristicas,
-    precio:"1200 Dop",
+    precio:"1,200 Dop",
     url:"/wintercoockies.jpeg"
   },{
-    nombre:"",
+    nombre:"Galletas de Vainilla edicion San Valentín",
     caracteristicas,
-    precio:"Dop",
-    url:"/"
+    precio:"1,400 Dop",
+    url:"/ChatGPTcora.png"
   },{
-    nombre:"",
+    nombre:"Galletas glaseadas",
     caracteristicas,
-    precio:"Dop",
-    url:"/"
+    precio:"1,400 Dop",
+    url:"/typeHeart.jpeg"
   },{
-    nombre:"",
+    nombre:"Cupcakes florales rellenos de dulce de leche",
     caracteristicas,
-    precio:"Dop",
-    url:"/"
+    precio:"2,500 Dop",
+    url:"/cajamofings.png"
   },{
-    nombre:"",
+    nombre:"Pinos de Chocolate edicion Navidad",
     caracteristicas,
-    precio:"Dop",
-    url:"/"
+    precio:"1,200 Dop",
+    url:"/arbolNavidebno.png"
   },{
-    nombre:"",
+    nombre:"Galletas de Vainilla edicion San Valentín",
     caracteristicas,
     precio:"Dop",
-    url:"/"
+    url:"/heartoceam.png"
   },{
-    nombre:"",
+    nombre:"Galletas de Vainilla Corazon",
     caracteristicas,
     precio:"Dop",
-    url:"/"
-  },{
-    nombre:"",
-    caracteristicas,
-    precio:"Dop",
-    url:"/"
-  },{
-    nombre:"",
-    caracteristicas,
-    precio:"Dop",
-    url:"/"
+    url:"/heart.png"
   },];
-  const macarons = ["Macarons de Frambuesa", "Cupcakes de Celebración"];
+  const macarons = [{
+    nombre:"Cupcakes decorados rellenos de dulce de leche",
+    caracteristicas,
+    precio:"2,200 Dop",
+    url:"/mofingsoccer.png"
+  },{
+    nombre:"Cupcakes florales rellenos de dulce de leche",
+    caracteristicas,
+    precio:"2,500 Dop",
+    url:"/cajamofings.png"
+  },];
 
   return (
     <div className="bg-pink-200 font-sans text-zinc-700 min-h-screen">
@@ -190,8 +190,8 @@ export default function App() {
           <div className="container mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-8">
-                {macarons.map((macaron) => (
-                  <ProductCard key={macaron} name={macaron} />
+                {macarons.map((macaron, index) => (
+                  <ProductCard key={index} name={macaron.nombre} caracteristicas={macaron.caracteristicas} precio={macaron.precio} url={macaron.url} />
                 ))}
               </div>
               <div className="w-full md:w-1/2 flex justify-center">
@@ -222,8 +222,8 @@ export default function App() {
           <div className="flex justify-center items-center mb-6">
             <CakeIcon />
           </div>
-          <p className="font-serif text-xl text-pink-400 mb-4">
-            Pâtisserie Chic & Stylish
+          <p className="font-serif text-xl text-pink-400 mb-4 text-bol">
+            Delicias Marijo
           </p>
           <p className="text-sm mb-6">Creando momentos dulces desde 2024.</p>
           <div className="flex justify-center space-x-6">
